@@ -123,10 +123,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5      &kp NUMBER_6  &kp N7     &kp NUMBER_8  &kp NUMBER_9  &kp N0
-        &kp LSHFT     &kp LEFT      &kp DOWN      &kp RIGHT     &kp LBKT    &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT     &kp KP_MINUS
-&trans  &kp DEL       &kp PG_UP     &kp K_COPY    &kp K_PASTE   &kp LPAR    &kp HOME      &none      &none         &kp END       &kp KP_MULTIPLY  &kp DELETE
-                                    &trans        &trans        &trans      &mo ADJ       &kp KP_N0  &trans
+              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7     &kp NUMBER_8  &kp NUMBER_9  &kp N0
+              &kp LSHFT     &kp LS(F6)    &kp LS(LC(L))  &none         &trans    &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT     &trans
+&kt LEFT_ALT  &kp DEL       &kp PG_UP     &kp K_COPY     &kp K_PASTE   &none     &kp HOME      &none      &none         &kp END       &trans  &kp DELETE
+                                          &trans         &trans        &trans    &mo ADJ       &kp KP_N0  &trans
             >;
         };
 
@@ -149,10 +149,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH    &kp DLLR           &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
-        &kp RA(A)    &kp K_COPY   &kp RA(S)   &trans             &trans             &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-&trans  &kp RA(F18)  &kp RA(F19)  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                  &trans      &gif               &mo ADJ            &trans     &kp C_PP   &trans
+                                      &kp EXCL     &kp AT       &kp HASH    &kp DLLR           &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
+                                      &kp RA(A)    &kp K_COPY   &kp RA(S)   &trans             &trans             &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
+&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp RA(F18)  &kp RA(F19)  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                                                &trans      &gif               &mo ADJ            &trans     &kp C_PP   &trans
             >;
         };
 
@@ -175,10 +175,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans        &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4
+        &bootloader  &bt BT_NXT  &bt BT_SEL 0  &trans        &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&trans  &trans       &bt BT_PRV  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                                 &trans        &trans        &trans    &trans  &trans  &trans
             >;
         };
 
