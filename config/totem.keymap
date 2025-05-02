@@ -40,7 +40,7 @@
         };
 
         screenshot {
-            bindings = <&mt PRINTSCREEN PSCRN>;
+            bindings = <&mt PRINTSCREEN LG(RS(NUMBER_4))>;
             key-positions = <9 19 30>;
         };
     };
@@ -87,7 +87,7 @@
          &kp Q        &kp W         &kp E           &kp R        &kp T        &kp Y    &kp U  &kp I            &kp O              &kp P
          &mt LCTRL A  &mt LSHIFT S  &mt LEFT_ALT D  &mt LSHFT F  &kp G        &kp H    &kp J  &mt RIGHT_ALT K  &mt RIGHT_SHIFT L  &mt RCTRL SEMI
 &kp ESC  &kp Z        &kp X         &kp C           &kp V        &kp B        &kp N    &kp M  &kp COMMA        &kp DOT            &kp FSLH        &kp APOS
-                                    &kp LGUI        &lt 1 TAB    &kp SPACE    &kp RET  &to 2  &kp BSPC
+                                    &kp LGUI        &lt 1 TAB    &kp SPACE    &kp RET  &mo 2  &kp BSPC
             >;
         };
 
@@ -110,10 +110,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4    &kp N5    &kp NUMBER_6  &kp N7     &kp NUMBER_8  &kp NUMBER_9  &kp N0
-              &kp LSHFT     &kp LS(F6)    &kp LS(LC(L))  &none           &trans    &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT     &trans
-&kt LEFT_ALT  &kp DEL       &kp PG_UP     &kp C_AC_COPY  &kp C_AC_PASTE  &none     &kp HOME      &none      &none         &kp END       &trans  &kp DELETE
-                                          &trans         &trans          &trans    &mo 3         &kp KP_N0  &trans
+              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp N5    &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp NUMBER_9  &kp N0
+              &kt LSHFT     &kp LS(F6)    &kp LS(LC(L))     &none              &trans    &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT     &trans
+&kt LEFT_ALT  &kp DEL       &kp PG_UP     &mt LG(C) K_COPY  &mt LG(V) K_PASTE  &none     &kp HOME      &none     &none         &kp END       &trans  &kp DELETE
+                                          &trans            &trans             &trans    &mo 3         &none     &trans
             >;
         };
 
@@ -136,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                                      &kp EXCL     &kp AT  &kp HASH    &kp DLLR           &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
-                                      &kp RA(A)    &none   &kp RA(S)   &trans             &trans             &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp RA(F18)  &none   &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                                           &trans      &none              &mo 3              &trans     &kp C_PP   &trans
+                                      &kp EXCL   &kp AT  &kp HASH    &kp DLLR                   &kp PRCNT                      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
+                                      &kp RA(A)  &none   &kp RA(S)   &mt LG(LS(LEFT)) LG(LEFT)  &mt LG(LS(RIGHT)) LG(RIGHT)    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
+&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &none      &none   &kp K_MUTE  &kp C_VOLUME_DOWN          &kp C_VOLUME_UP                &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                                         &trans      &none                      &mo 3                          &trans     &none      &trans
             >;
         };
 
@@ -170,31 +170,6 @@
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        tvp1_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "TVP 1";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃ NEXT FILE ┃ MARK IN   ┃ ROTATE    ┃ MARK OUT  ┃ SHOW SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ TVP II    ┃ LEFT      ┃ PAN       ┃ RIGHT     ┃ PLAY/FLIP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃ FULLSCR   ┃ SHIFT     ┃ COPY      ┃ DELETE    ┃ PASTE     ┃ IMG MARK  ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃ UNDO/SAVE ┃  SEL/MOV  ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
-            bindings = <
-       &kp TAB    &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt 0 L    &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
-&kp J  &kp LSHFT  &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
-                             &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
-            >;
-        };
-
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
     };
 };
