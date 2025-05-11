@@ -53,6 +53,11 @@
             bindings = <&kt LEFT_SHIFT>;
             key-positions = <15 16 17>;
         };
+
+        bspace_right {
+            bindings = <&none>;
+            key-positions = <26 27 28>;
+        };
     };
 
     macros {
@@ -121,8 +126,8 @@
 
             bindings = <
                               &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &kp NUMBER_4          &kp N5    &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp NUMBER_9  &kp N0
-                              &kp LA(ENTER)  &kp LS(F6)    &kp LS(LC(L))        &none                 &none     &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT     &trans
-&mt LC(SPACE) LA(LEFT_SHIFT)  &kp LC(Z)      &kp PG_UP     &mt LG(C) C_AC_COPY  &mt LG(V) C_AC_PASTE  &none     &kp HOME      &none     &none         &kp END       &trans  &kp DELETE
+                              &kp LA(ENTER)  &kp LS(F6)    &kp LS(LC(L))        &none                 &none     &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT     &kp HOME
+&mt LC(SPACE) LA(LEFT_SHIFT)  &kp LC(Z)      &kp PG_UP     &mt LG(C) C_AC_COPY  &mt LG(V) C_AC_PASTE  &none     &kp F6        &kp F7    &kp F8        &kp F9        &kp END   &kp DELETE
                                                            &trans               &trans                &trans    &mo 3         &none     &trans
             >;
         };
