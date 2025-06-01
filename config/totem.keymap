@@ -125,10 +125,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                              &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &kp NUMBER_4          &kp N5    &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp NUMBER_9  &kp N0
-                              &kp LA(ENTER)  &kp LS(F6)    &kp LS(LC(L))        &none                 &none     &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT     &kp HOME
-&mt LC(SPACE) LA(LEFT_SHIFT)  &kp LC(Z)      &kp PG_UP     &mt LG(C) C_AC_COPY  &mt LG(V) C_AC_PASTE  &none     &kp F6        &kp F7    &kp F8        &kp F9        &kp END   &kp DELETE
-                                                           &trans               &trans                &trans    &mo 3         &none     &trans
+                              &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &kp NUMBER_4              &kp N5           &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp NUMBER_9  &kp N0
+                              &kp LA(ENTER)  &kp LS(F6)    &kp LS(LC(L))        &mt LC(SPACE) LA(LSHIFT)  &kp PAGE_UP      &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT     &kp HOME
+&mt LC(SPACE) LA(LEFT_SHIFT)  &kp LC(Z)      &kp GRAVE     &mt LG(C) C_AC_COPY  &mt LG(V) C_AC_PASTE      &kp PAGE_DOWN    &kp F6        &kp F7    &kp F8        &kp F9        &kp END   &kp DELETE
+                                                           &trans               &trans                    &trans           &mo 3         &none     &trans
             >;
         };
 
@@ -153,7 +153,7 @@
             bindings = <
               &kp EXCL   &kp AT          &kp HASH    &kp DLLR                   &kp PRCNT                      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
               &kp RA(A)  &kp LS(LSHIFT)  &kp RA(S)   &mt LG(LS(LEFT)) LG(LEFT)  &mt LG(LS(RIGHT)) LG(RIGHT)    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-&kt LEFT_ALT  &none      &none           &kp K_MUTE  &kp C_VOLUME_DOWN          &kp C_VOLUME_UP                &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+&kt LEFT_ALT  &kp GRAVE  &none           &kp K_MUTE  &kp C_VOLUME_DOWN          &kp C_VOLUME_UP                &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                          &trans      &none                      &mo 3                          &trans     &none      &trans
             >;
         };
