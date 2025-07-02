@@ -77,6 +77,10 @@
         };
     };
 
+    &hid_trackball_interface {
+       scroll-layers = <3>;
+    };
+
     macros {
     };
 
@@ -131,7 +135,7 @@
            &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp NUMBER_9  &kp N0
            &kp LA(ENTER)  &kp LS(F6)    &kp LS(LC(L))  &trans        &kp PAGE_UP      &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT     &kp HOME
 &kp GRAVE  &kp LC(Z)      &none         &mkp MB1       &trans        &kp PAGE_DOWN    &kp F6        &kp F7    &kp F8        &kp F9        &kp END   &kp DELETE
-                                        &tb_tg_scroll  &trans        &trans           &mo 3         &none     &trans
+                                        &trans         &trans        &trans           &mo 3         &none     &trans
             >;
         };
 
