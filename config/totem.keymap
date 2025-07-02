@@ -78,20 +78,6 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
     };
 
     keymap {
@@ -143,9 +129,9 @@
 
             bindings = <
            &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp NUMBER_9  &kp N0
-           &kp LA(ENTER)  &kp LS(F6)    &kp LS(LC(L))  &mkp MCLK     &kp PAGE_UP      &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT     &kp HOME
-&kp GRAVE  &kp LC(Z)      &none         &mkp MB1       &mkp RCLK     &kp PAGE_DOWN    &kp F6        &kp F7    &kp F8        &kp F9        &kp END   &kp DELETE
-                                        &tb_tg_scroll  &trans        &trans           &mo 3         &none     &trans
+           &kp LA(ENTER)  &kp LS(F6)    &kp LS(LC(L))  &trans        &kp PAGE_UP      &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT     &kp HOME
+&kp GRAVE  &kp LC(Z)      &none         &trans         &trans        &kp PAGE_DOWN    &kp F6        &kp F7    &kp F8        &kp F9        &kp END   &kp DELETE
+                                        &trans         &trans        &trans           &mo 3         &none     &trans
             >;
         };
 
