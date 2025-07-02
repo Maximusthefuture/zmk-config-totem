@@ -31,6 +31,10 @@
     tapping-term-ms = <180>;
 };
 
+&hid_trackball_interface {
+    scroll-layers = <3>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -75,10 +79,6 @@
             bindings = <&kp LS(LEFT_ALT)>;
             key-positions = <10 11 12 24>;
         };
-    };
-
-    &hid_trackball_interface {
-       scroll-layers = <3>;
     };
 
     macros {
