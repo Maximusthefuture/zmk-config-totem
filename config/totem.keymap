@@ -29,8 +29,6 @@
     tapping-term-ms = <180>;
 };
 
-&hid_trackball_interface { scroll-layers = <3>; };
-
 / {
     combos {
         compatible = "zmk,combos";
