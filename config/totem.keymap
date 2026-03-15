@@ -88,15 +88,6 @@
         };
     };
 
-    macros {
-        curlybraces: curlybraces {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
-            label = "CURLYBRACES";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -147,7 +138,7 @@
             bindings = <
            &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4     &kp N5           &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp NUMBER_9  &kp N0
            &kp LA(ENTER)  &kp LS(F6)    &kp LS(LC(L))  &mt LG(A) LC(A)  &kp PAGE_UP      &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT     &kp HOME
-&kp GRAVE  &kp LC(Z)      &none         &curlybraces   &trans           &kp PAGE_DOWN    &kp F6        &kp F7    &kp F8        &kp F9        &kp END   &kp DELETE
+&kp GRAVE  &kp LC(Z)      &none         &none          &trans           &kp PAGE_DOWN    &kp F6        &kp F7    &kp F8        &kp F9        &kp END   &kp DELETE
                                         &trans         &trans           &trans           &mo 3         &none     &trans
             >;
         };
@@ -197,10 +188,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &none  &out OUT_TOG  &bt BT_CLR  &bt BT_SEL 0    &trans  &kp F1  &kp F2   &kp F3   &kp F4
-        &bootloader  &none  &none         &trans      &bt BT_SEL 1    &trans  &kp F5  &kp F6   &kp F7   &kp F8
-&trans  &trans       &none  &none         &none       &bt BT_SEL 2    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-                            &trans        &trans      &trans          &trans  &trans  &trans
+        &sys_reset   &none  &out OUT_TOG  &bt BT_CLR    &bt BT_SEL 0    &trans  &kp F1  &kp F2   &kp F3   &kp F4
+        &bootloader  &none  &none         &trans        &bt BT_SEL 1    &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&trans  &trans       &none  &none         &bt BT_SEL 3  &bt BT_SEL 2    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                            &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
 
